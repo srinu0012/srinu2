@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>click to change color</h2>
+        <div class="btn">
+            <button id="bt" onclick="change()">click</button>
+        </div>
+    </div>
+    <script>
+      function change(){
+        var x="123456789ABCDEF"
+        var color="#"
+        for(var i=0;i<6;i++){
+           var r=Math.floor(Math.random()*16);
+           color=color+x[r]
+           console.log(color)
+        }
+        console.log(color)
+        document.body.style.backgroundColor=color
+      }
+    </script>
+
+</body>
+</html>

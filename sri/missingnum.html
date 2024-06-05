@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,7,8,9,6]
+        let n=10
+        function missing_num(arr,n){
+            sum=0
+            let tot=n*(n+1)/2
+            for(i of arr){
+                sum=sum+i
+            }
+        return tot-sum;
+        }
+        document.write(missing_num(arr,n))
+    </script>
+</body>
+</html>

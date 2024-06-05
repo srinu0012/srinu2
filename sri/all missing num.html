@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[3,4,5]
+        let n=5
+        function missing_all_num(arr,n){
+            let obj={}
+            let missing=[]
+            for(i of arr){
+                obj[i]=i
+            }
+            for(i=1;i<=n;i++){
+                if(obj[i]==undefined){
+                    missing.push(i)
+                }
+            }
+            return missing
+        }
+        document.write(missing_all_num(arr,n))
+    </script>
+</body>
+</html>
